@@ -1,0 +1,213 @@
+html,
+body {
+    background-image: url(magichouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+* {
+    font-family: Arial, "微軟正黑體", sans-serif;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.outlineBlock {
+    border: 1px solid yellow;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.classificationContainer {
+    border: 1px solid transparent;
+    width: 900px;
+    height: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    background-color: rgb(20, 20, 20, 0.9);
+
+}
+
+.floatHat {
+    border: 1px solid transparent;
+    margin: 50px 320px 0;
+    width: 250px;
+    animation-name: spinning, floating;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes floating {
+    0% {
+        margin-top: -2px;
+    }
+
+    25% {
+        margin-bottom: 2px;
+    }
+}
+
+.outsideBlock_top {
+    border: 1px solid transparent;
+    height: 300px;
+}
+
+.outsideBlock_bottom {
+    border: 1px solid transparent;
+    height: calc(100% - 300px);
+    margin-bottom: 0;
+    font-size: 22px;
+    box-sizing: border-box;
+    position: relative;
+
+
+}
+
+.maincontent {
+    border: 1px solid transparent;
+    width: 580px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.btnAction {
+    border: 1px solid #245785;
+    padding: 10px 20px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    background-color: #245785;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+.btnAction:hover {
+    background-color: #3985c8;
+    cursor: pointer;
+}
+
+.btnAction:active {
+    transform: scale(0.9);
+}
+
+.questionBlock {
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    width: 900px;
+    top: 0px;
+    left: 800px;
+    height: 400px;
+    position: absolute;
+    box-sizing: border-box;
+    display: inline-block;
+    display: none;
+
+}
+
+.questionBlock_2,
+.questionBlock_3,
+.questionBlock_4,
+.questionBlock_5 {
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    width: 900px;
+    top: 0px;
+    left: 800px;
+    height: 400px;
+    position: absolute;
+    box-sizing: border-box;
+
+}
+
+
+
+/*題目1*/
+[class^="que_"] {
+    width: 700px;
+    margin: 10px 50px;
+    font-size: 24px;
+
+}
+
+[class^="ans_"] {
+    list-style: none;
+    border: 1px solid transparent;
+    width: 600px;
+    margin: 0 auto;
+}
+
+ul.ans_1 li,
+ul.ans_2 li,
+ul.ans_3 li,
+ul.ans_4 li,
+ul.ans_5 li {
+    list-style: none;
+    border: 1px solid whitesmoke;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 20px;
+    transition: transform 0.1s linear;
+}
+
+ul.ans_1 li:hover,
+ul.ans_2 li:hover,
+ul.ans_3 li:hover,
+ul.ans_4 li:hover,
+ul.ans_5 li:hover {
+    border: 1px solid rgb(250, 232, 127);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.reslutText,
+.reslutText1 {
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+    position: relative;
+
+}
+
+.house,
+[class^="crest_"] {
+    border: 1px solid transparent;
+    margin: 0;
+}
+
+.sortingHouse {
+    border: 1px solid transparent;
+    position: relative;
+    display: none;
+}
